@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #ffffff;
+    list-style: none;
+    /* faz com que todo texto fique nao selecionavel */
+     -webkit-touch-callout: none;  /* iPhone OS, Safari */
+     -webkit-user-select: none;    /* Chrome, Safari 3 */
+     -khtml-user-select: none;     /* Safari 2 */
+     -moz-user-select: none;       /* Firefox */
+     -ms-user-select: none;        /* IE10+ */
+     user-select: none;
+}
+ 
+body{
+     background-color: rgb(20, 20, 23);
+     height: 100vh; 
+}
+
+body::-webkit-scrollbar{
+    background-color: #292930;
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #fe7e00;
+    border-radius: 10px;
+}
+
+.linha-texto::after{
+    content: " ";
+    background-color: #fe7e00;
+    display: block;
+    height: 5px;
+    width: 100%;
+    margin: 1% 0;
+}
+
+.card{
+    position: relative;
+    background: none;
+    width: 100%;
+    height: 100%;
+}
+
+.card img{
+    height: 100%;
+}
+
+.card-body{
+    /* background-color: red; */
+    position: absolute;
+    overflow: scroll;
+    opacity: 100;
+    color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-body::-webkit-scrollbar{
+    /* background-color: red; */
+    display: none;
+}
+
+.card-body:hover{
+    background-color: rgb(20, 20, 20,0.7);
+}
+
+
+.card-title{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.4234068627450981) 0%, rgba(0,0,0,0.12088585434173671) 100%);
+    top: 85%;
+    position: absolute;
+    display: inline-block;
+    font-size: 13px;
+    width: 100%;
+    height: 20%;
+}
+.span-categoria{
+    position: absolute;
+    text-align: center;
+    right: 2%;
+    font-size: 11px;
+    background-color: rgb(20, 20, 20, 0.7);
+    border-radius: 40px 10px 10px 40px;
+    min-width: 70px;
+}
+
+.span-ano{
+    background-color: rgb(254, 126, 0);
+    border-radius: 10px 40px 40px 10px;
+    color: #ffffff;
+    position: absolute;
+    text-align: center;
+    font-size: 11px;
+    left: 2%;
+    width: 40px;
+}
+
+.divAddLista{
+    border: solid;
+    border-color: #b5b5b5;
+    background-color: #292930;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50px;
+    top: 70%;
+    left: 80%;
+    font-size: 10px; 
+}
+
+.iconeAdd{
+    position: relative;
+}
+
+.divAddLista:hover{
+    border-color: #fe7e00;
+}
+
+.botaoAddLista{
+    background: none;
+    border: none;
+}
+
