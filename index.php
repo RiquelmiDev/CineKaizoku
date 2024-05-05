@@ -108,15 +108,15 @@ foreach ($resultado as $listar) {
                     <h3 class="mb-3 fs-5">Navegue nos recentes <i class="fa-solid fa-angle-right"></i></h3>
                 </div>
                 <div class="col-6 text-right">
-                    <a class="btn mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <a class="btn mr-1" href="#carouselIndicators1" role="button" data-slide="prev">
                         <i class="fa fa-arrow-left"></i>
                     </a>
-                    <a class="btn mr" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <a class="btn mr" href="#carouselIndicators1" role="button" data-slide="next">
                         <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
                 <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+                    <div id="carouselIndicators1" class="carousel slide" data-ride="carousel">
 
                         <div class="carousel-inner">
                             <?php
