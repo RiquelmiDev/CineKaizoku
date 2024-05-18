@@ -138,21 +138,21 @@ $filmesNaLista = array_column($resultado, 'filmes_idfilme');
                                         // Verifica se o filme está na lista do usuário
                                         if (in_array($idFilme[$i], $filmesNaLista)) { ?>
                                             <div class="divAddLista">
-                                                <button class="botaoAddLista" type="button" disabled>
-                                                    <i class="fa-solid fa-check"></i>
-                                                </button> 
+                                                <span class="d-inline-block" tabindex="0" data-bs-toggle="tooltip" data-bs-title="Remover da lista">
+                                                    <button class="botaoAddLista" type="button" disabled>
+                                                        <i class="fa-solid fa-check"></i>
+                                                    </button>
+                                                </span>
                                             </div>
                                         <?php } else { ?>
                                             <div class="divAddLista">
-                                                <button class="botaoAddLista" type="submit">
+                                                <button class="botaoAddLista" type="submit" data-bs-toggle="tooltip" data-bs-html="true" data-bs-title="Adicionar a lista">
                                                     <i class="fa-solid fa-plus"></i>
-                                                </button> 
+                                                </button>
                                             </div>
                                         <?php } ?>
   
                                     </form>
-                                    <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
-
                                 </div>
                             </div>
                         </div>
@@ -170,6 +170,13 @@ $filmesNaLista = array_column($resultado, 'filmes_idfilme');
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="./src/js/pesquisaFilme.js"></script>
     <script src="./src/js/addMyList.js"></script>
+    <!-- Script que mostra a msg de adicionar a lista ao usar o hover do botao de add lista -->
+    <script>
+        $(document).ready(function(){
+            $('[data-bs-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    
     <script>
         console.log('%c Perdeu algo Curioso ?', 'color: red; line-height:50px;font-size: 30px;');
     </script>
